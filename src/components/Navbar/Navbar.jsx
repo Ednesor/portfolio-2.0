@@ -5,15 +5,21 @@ import Image from 'next/image';
 import { Link } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai"
 import { GiCancel } from "react-icons/gi"
+import DownloadButton from './DownloadButton';
 
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(1000);
     const [menu, setMenu] = useState(false);
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setWindowWidth(window.innerWidth);
+          }
+        
         const handleResize = () => {
+            console.log("holas")
             setWindowWidth(window.innerWidth);
         };
 
@@ -25,8 +31,8 @@ export default function Navbar() {
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -131,7 +137,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <button className={style.download}>DESCARGAR CV</button>
+                <DownloadButton />
             </div>
         </nav>
     )
