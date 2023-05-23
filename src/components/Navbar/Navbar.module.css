@@ -1,7 +1,8 @@
 .container {
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
@@ -22,8 +23,9 @@
 }
 
 .image {
-    width: auto;
+    width: 40px;
     height: 40px;
+    transition: width .25s;
 }
 
 .name {
@@ -35,7 +37,10 @@
 
 .links{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
+    width: 80%;
 }
 
 .links li a{
@@ -64,11 +69,47 @@
     font-weight: 800;
     color: white;
     background-color: #0075b4;
-    text-shadow: 0 0 2px black;
     cursor: pointer;
     user-select: none;
 }
-
-.activo{
-    background-color: red;
+.menu{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+}
+@media (max-width: 900px){
+    .container{
+        padding: 10px 0 100px 0;
+        top: -285px;
+        transition: all .5s;
+    }
+    .menu{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .links li{
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+    .links{
+        width: 100%;
+        text-align: center;
+    }
+    .logoContainer{
+        position: absolute;
+        bottom: 40px;
+        width: 120px;
+    }
+    .icon{
+        position: absolute;
+        bottom: -30px;
+    }
+    .download{
+        margin-top: 10px;
+    }
 }
