@@ -87,10 +87,10 @@ export default function Navbar() {
                     <li>
                         <Link
                             activeClass={"active"}
-                            to="home"
+                            to="about"
                             spy={true}
                             smooth={true}
-                            offset={50}
+                            offset={-100}
                             duration={500}
                             delay={100}
                         >

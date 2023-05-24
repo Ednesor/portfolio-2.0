@@ -8,11 +8,12 @@
     position: fixed;
     border-radius: 0 0 20px 20px;
     background: linear-gradient(90deg,
-      rgb(35, 38, 44) 0%,
-      rgb(49, 50, 54) 50%,
-      rgb(31, 31, 41) 100%);
-      box-shadow: 0 0 0px black;
-      transition: box-shadow .25s;
+            rgb(35, 38, 44) 0%,
+            rgb(49, 50, 54) 50%,
+            rgb(31, 31, 41) 100%);
+    box-shadow: 0 0 0px black;
+    transition: box-shadow .25s;
+    z-index: 10;
 }
 
 .logoContainer {
@@ -35,7 +36,7 @@
     user-select: none;
 }
 
-.links{
+.links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,7 +44,7 @@
     width: 80%;
 }
 
-.links li a{
+.links li a {
     padding: 10px;
     color: rgb(155, 155, 155);
     text-decoration: none;
@@ -57,7 +58,7 @@
     user-select: none;
 }
 
-.links li a:hover{
+.links li a:hover {
     text-shadow: 0 0 20px white;
 }
 
@@ -72,44 +73,53 @@
     cursor: pointer;
     user-select: none;
 }
-.menu{
+
+.menu {
     width: 75%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.icon{
+
+.icon {
     color: white;
     font-size: 30px;
 }
-@media (max-width: 900px){
-    .container{
+
+@media (max-width: 900px) {
+    .container {
         padding: 10px 0 100px 0;
         top: -285px;
         transition: all .5s;
     }
-    .menu{
+
+    .menu {
         width: 100%;
         flex-wrap: wrap;
     }
-    .links li{
+
+    .links li {
         width: 100%;
         margin: 15px 0 15px 0;
     }
-    .links{
+
+    .links {
         width: 100%;
         text-align: center;
     }
-    .logoContainer{
+
+    .logoContainer {
         position: absolute;
         bottom: 40px;
         width: 120px;
     }
-    .icon{
+
+    .icon {
         position: absolute;
         bottom: -30px;
     }
-    .download{
+
+    .download {
         margin-top: 10px;
     }
 }
