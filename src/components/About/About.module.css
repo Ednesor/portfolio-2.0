@@ -33,7 +33,8 @@
 .imageContainer{
     width: 45%;
     /* height: auto; */
-    background-color: #00a6ffbd;
+    border: 5px solid #00a6ff;
+    box-shadow: 0 0 20px #00a6ff, inset 0 0 20px #00a6ff;
     border-radius: 50%;
     
 }
