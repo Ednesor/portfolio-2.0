@@ -33,7 +33,7 @@
 .imageContainer{
     width: 45%;
     /* height: auto; */
-    border: 15px dotted #00a6ff;
+    background-color: #00a6ffbd;
     border-radius: 50%;
     
 }
@@ -50,7 +50,6 @@
     }
     .imageContainer{
         width: 100%;
-        border: 10px dotted #00a6ff;
         margin-top: 50px;
     }
     .image{
@@ -65,5 +64,8 @@
     }
     .info p{
         text-align: center;
+    }
+    .info p:not(:first-child){
+        width: 100%;
     }
 }
