@@ -51,8 +51,10 @@
 }
 @media (max-width: 900px) {
     .container{
-        width: 100%;
         padding-top: 50px;
+    }
+    .cards{
+        width: 100%;
     }
     .card{
         width: 100%;
@@ -63,5 +65,8 @@
     }
     .body{
         font-size: 18px;
+    }
+    .tContainer p{
+        text-align: center;
     }
 }
