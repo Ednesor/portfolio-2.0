@@ -1,11 +1,27 @@
 .container{
+    padding-top: 100px;
+}
+.tContainer{
+    max-width: 1000px;
+    margin:  0 auto 0 auto;
+}
+.t1{
+    color: #00a6ff;
+    font-weight: 600;
+}
+.t2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto 0 auto;
-    padding-top: 100px;
 }
 .card{
     position: relative;
