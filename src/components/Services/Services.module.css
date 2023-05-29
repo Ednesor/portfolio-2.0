@@ -13,7 +13,8 @@
     color: white;
     font-size: 50px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin: 10px 0 20px 0;
+    line-height: 40px;
 }
 .cards{
     display: flex;
@@ -70,7 +71,6 @@
         text-align: center;
     }
     .t2{
-        line-height: 40px;
         margin-top: 15px;
     }
 }

@@ -129,7 +129,7 @@ export default function Navbar() {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            offset={50}
+                            offset={-50}
                             duration={500}
                             delay={100}
                         >
