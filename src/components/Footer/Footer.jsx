@@ -4,7 +4,8 @@ import image from "../../../public/Logo.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { MdWorkOutline } from "react-icons/md"
-import { BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs"
+import { SiFreelancer } from "react-icons/si"
+import { BsInstagram, BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs"
 
 export default function Footer() {
     return (
@@ -45,6 +46,22 @@ export default function Footer() {
                     rel='noopener noreferrer'
                 >
                     <MdWorkOutline className={style.icon} />
+                </Link>
+                <Link
+                    className={style.link}
+                    href={"https://github.com/Ednesor"}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <BsGithub className={style.icon} />
+                </Link>
+                <Link
+                    className={style.link}
+                    href={"https://www.freelancer.com.ar/u/edgarfunes01"}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <SiFreelancer className={style.icon} />
                 </Link>
             </section>
             <p className={style.copy}>
