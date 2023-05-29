@@ -103,7 +103,7 @@ export default function Navbar() {
                             to="services"
                             spy={true}
                             smooth={true}
-                            offset={windowWidth <= 900 ? -300 : -250}
+                            offset={windowWidth <= 900 ? -270 : -250}
                             duration={500}
                             delay={100}
                         >
