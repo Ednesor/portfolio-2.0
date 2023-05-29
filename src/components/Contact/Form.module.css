@@ -1,0 +1,74 @@
+.container {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.226), inset 0 0 30px rgba(213, 238, 248, 0.103);
+    padding: 40px;
+    width: 65%;
+    height: 520px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tinyInput,
+.bigInput {
+    background-color: rgba(4, 6, 8, 0.534);
+    padding: 10px;
+    border: 2px solid rgba(35, 47, 61, 0.219);
+    border-radius: 7px;
+    outline: none;
+    color: white;
+}
+
+.tinyInput {
+    width: calc(50% - 10px);
+}
+
+.bigInput {
+    height: 260px;
+    width: 100%;
+    resize: none;
+}
+
+.submit {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid rgba(35, 47, 61, 0.219);
+    border-radius: 7px;
+    background-color: rgba(4, 6, 8, 0.534);
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .25s;
+}
+.submit:hover{
+    background-color: rgba(11, 22, 32, 0.534);
+}
+
+.submitText {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.icon{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        margin: 20px auto 0 auto;
+        width: 640px;
+    }
+}
+@media (max-width: 700px) {
+    .container{
+        width: 100%;
+        height: 650px;
+    }
+    .tinyInput{
+        width: 100%;
+    }
+}

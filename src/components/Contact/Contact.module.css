@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 100px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tContainer{
+    width: 100%;
+}
+.t1{
+    color: #00a6ff;
+    font-weight: 600;
+}
+.t2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 40px;
+    margin: 15px 0 10px 0;
+}
+.cards{
+    display: inline-block;
+}
+.card{
+    width: 310px;
+    height: 115px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.226), inset 0 0 30px rgba(213, 238, 248, 0.103);
+    color: white;
+    padding: 30px 30px 30px 30px;
+    margin: 20px 20px 20px 0px;
+    text-decoration: none;
+}
+.icon{
+    display: block;
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+    color: #00a6ff;
+}
+.cardContent{
+    text-align: center;
+    margin-top: 10px;
+}
+@media (max-width: 1000px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .card{
+        margin: 0;
+    }
+    .tContainer{
+        margin-bottom: 20px;
+    }
+    .tContainer p{
+        text-align: center;
+    }
+}
