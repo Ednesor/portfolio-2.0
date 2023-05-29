@@ -18,3 +18,4 @@ export default function About() {
     </section>
   )
 }
+//TODO: ajustar el tamaño de imagen

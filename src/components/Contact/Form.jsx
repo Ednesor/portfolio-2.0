@@ -1,11 +1,11 @@
-import React, { useRef} from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import style from "./Form.module.css"
 import { BsSend } from "react-icons/bs"
 
 export default function Form() {
     const form = useRef();
-    
+
     const SERVICE_ID = process.env.SERVICE_ID;
     const TEMPLATE_ID = process.env.TEMPLATE_ID;
     const PUBLIC_KEY = process.env.PUBLIC_KEY;
@@ -14,10 +14,11 @@ export default function Form() {
         e.preventDefault();
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
+            .then(() => {
+                alert("Tu mensaje ha sido enviado satisfactoriamente");
+                setShowAlert(true);
+            }, () => {
+                alert("El mensaje no se ha podido enviar\nPor favor, contacteme vía email.")
             });
     };
 

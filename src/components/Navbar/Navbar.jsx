@@ -19,7 +19,6 @@ export default function Navbar() {
           }
         
         const handleResize = () => {
-            console.log("holas")
             setWindowWidth(window.innerWidth);
         };
 

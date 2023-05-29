@@ -33,4 +33,3 @@ export default function Contact() {
     </section>
   )
 }
-//TODO: Mostrar alerta cuando se envie un mensaje
