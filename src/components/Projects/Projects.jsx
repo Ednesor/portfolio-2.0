@@ -12,35 +12,12 @@ export default function Projects() {
         <p className={style.t2}>Ultimos proyectos</p>
       </div>
       <div className={style.projects}>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
-          <Image className={style.image} src={P1} alt="Una imagen" />
-          <p className={style.title}>Tarjeta de invitacion</p>
-        </Link>
-        <Link href={"http://tarjeta-aa.vercel.app/"} className={style.card} target='_blank' rel='noopener noreferrer'>
+        <Link
+          href={"http://tarjeta-aa.vercel.app/"}
+          className={style.card}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <Image className={style.image} src={P1} alt="Una imagen" />
           <p className={style.title}>Tarjeta de invitacion</p>
         </Link>

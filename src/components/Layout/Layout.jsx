@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import style from "./layout.module.css"
+import Footer from '../Footer/Footer'
 
 export default function Layout({ children, title, description }) {
   return (
@@ -17,7 +18,7 @@ export default function Layout({ children, title, description }) {
 
       <main className={style.main}>{children}</main>
 
-      <footer>footer</footer>
+      <Footer />
     </>
   )
 }

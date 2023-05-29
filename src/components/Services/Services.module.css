@@ -3,7 +3,8 @@
 }
 .tContainer{
     max-width: 1000px;
-    margin:  0 auto 0 auto;
+    margin:  0 auto 40px auto;
+    padding-left: 25px;
 }
 .t1{
     color: #00a6ff;
@@ -20,7 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
+    gap: 20px;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
@@ -33,7 +35,6 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.226), inset 0 0 30px rgba(213, 238, 248, 0.103);
     color: white;
     padding: 30px 30px 30px 30px;
-    margin: 20px;
 }
 .icon{
     font-size: 40px;
@@ -50,6 +51,12 @@
     font-weight: 300;
     font-size: 15px;
 }
+@media (max-width: 1000px) {
+    .tContainer{
+        padding: 0;
+        text-align: center;
+    }
+}
 @media (max-width: 900px) {
     .container{
         padding-top: 80px;
@@ -58,7 +65,7 @@
         width: 100%;
     }
     .card{
-        width: 100%;
+        width: 90%;
     }
     .title{
         font-size: 25px;
@@ -66,9 +73,6 @@
     }
     .body{
         font-size: 18px;
-    }
-    .tContainer p{
-        text-align: center;
     }
     .t2{
         margin-top: 15px;

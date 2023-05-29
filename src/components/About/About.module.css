@@ -32,7 +32,6 @@
 
 .imageContainer{
     width: 45%;
-    /* height: auto; */
     border: 5px solid #00a6ff;
     box-shadow: 0 0 20px #00a6ff, inset 0 0 20px #00a6ff;
     border-radius: 50%;
