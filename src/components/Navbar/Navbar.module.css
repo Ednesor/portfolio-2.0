@@ -72,6 +72,10 @@
     background-color: #0075b4;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
