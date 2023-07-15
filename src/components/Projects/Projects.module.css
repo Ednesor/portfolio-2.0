@@ -60,6 +60,7 @@
     border: 2px solid rgba(0, 0, 0, 0.904);
     opacity: 0;
     transition: opacity .25s, bottom .5s;
+    text-align: center;
 }
 @media (max-width: 1000px) {
     .tContainer p{
